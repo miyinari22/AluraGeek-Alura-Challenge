@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header>
+        Alura Geek
+    </header>
+
+    <main>
+        <section>
+            <h1>Mis Productos</h1>
+            <div data-product class="mis-productos">
+            </div>
+        </section>
+        <section class="agregar-productos">
+            <h1>Agregar Productos</h1>
+            <div data-form class="formulario">
+                <form class="formulario-agregar-productos">
+                    <div class="form-field">
+                        <label for="titulo">Producto</label>
+                        <input data-titulo id="titulo" type="text" placeholder="Ingrese el nombre del producto" class="titulo-producto" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="precio">Precio</label>
+                        <input data-precio id="precio" type="number" placeholder="Ingrese el precio del producto" class="precio-producto" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="imagen">URL de la imagen</label>
+                        <input data-imagen id="imagen" type="url" placeholder="Ingrese la URL de la imagen del producto" class="imagen-url-producto" required>
+                    </div>
+                    <div class="botones">
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                        <button class="boton-limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="rodapie">
+            <p>Miyi Nari © 2024</p>
+        </div>
+    </footer>
+
+    <div id="circle"></div> <!-- Div para el círculo que sigue al cursor -->
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/mouse.js"></script>
+</body>
+
+</html>

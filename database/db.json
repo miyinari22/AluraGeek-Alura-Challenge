@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "titulo": "CeVIO AI HARU",
+      "precio": "25",
+      "imagen": "https://www.shimamura.co.jp/shop/rifu/wp-content/uploads/sites/17/2023/08/20231025-3613e71358732a402d7a57cddffb369aa9e1a6.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Synthesizer V Kevin",
+      "precio": "25",
+      "imagen": "https://store.dreamtonics.com/wp-content/uploads/2022/02/Kevin-512.png"
+    },
+    {
+      "id": 12,
+      "titulo": "VOCALOID6 AI Hibiki Koto",
+      "precio": "25",
+      "imagen": "https://rsc-net.vocaloid.com/assets/image_files/38298bfe98b5c1244d97f044ac0e7f99/VOCALOID6_Voicebank_AI_hibiki_koto_640x640.png"
+    },
+    {
+      "id": "0b3f",
+      "titulo": "ACE Studio Mo Qingxian AI",
+      "precio": "25",
+      "imagen": "https://vocadb.net/Artist/Picture/139205"
+    }
+  ]
+}

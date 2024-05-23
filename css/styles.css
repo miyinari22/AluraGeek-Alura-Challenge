@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap);
+*{
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/backg.jpg);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #56fffa, #4ac29a);
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #4ac29a, #56fffa);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 5px;
+}
+
+.mis-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productosItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    height: 300px; /* Fijamos una altura total para los contenedores de producto */
+    width: 180px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productosItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.precio-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; /* Para empujar el precio y botón hacia la parte inferior del contenedor */
+    padding-top: 10px; /* Espacio entre el contenido anterior y el precio-botton */
+    border-top: 1px solid #e0e0e0; /* Línea superior para separar visualmente */
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 150px; /* Fijamos una altura uniforme para todas las imágenes */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Para que las imágenes se recorten y no se deformen */
+}
+
+.titulo-producto p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.precio-producto p {
+    font-size: 18px;
+    color: #4ac29a;
+    font-weight: bold;
+}
+
+
+.agregar-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Cambiado a un tono más suave */
+    border: solid 1px #ddd; /* Borde más sutil */
+    border-radius: 10px; /* Bordes más suaves */
+    padding: 20px; /* Más espaciado interno */
+    height: auto; /* Ajuste dinámico de altura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+
+.agregar-productos h2 {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: #333; /* Color de texto más oscuro */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.agregar-productos p {
+    font-size: 14px; /* Tamaño de fuente para los párrafos */
+    color: #666; /* Color de texto gris */
+    text-align: center; /* Alineación centrada del texto */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-agregar-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos del formulario */
+    width: 100%; /* Asegurarse de que el formulario ocupe todo el ancho disponible */
+    max-width: 400px; /* Ancho máximo para evitar que se extienda demasiado */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para contrastar con el contenedor */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.formulario-agregar-productos input:focus, 
+.formulario-agregar-productos textarea:focus, 
+.formulario-agregar-productos select:focus {
+    border-color: #000000; /* Color de borde al enfocar */
+    outline: none; /* Eliminar el borde predeterminado del enfoque */
+    box-shadow: 0 0 5px rgb(0, 255, 55); /* Sombra para el enfoque */
+}
+
+/* Estilos para los labels */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 10px; /* Espacio entre los campos */
+}
+
+label {
+    font-weight: bold; /* Fuente en negrita */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+
+input {
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #f9f9f9; /* Fondo claro */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+input:focus {
+    border-color: #4ac29a; /* Color de borde al enfocar */
+    outline: none; /* Eliminar el borde predeterminado del enfoque */
+    box-shadow: 0 0 5px rgba(74, 194, 154, 0.5); /* Sombra para el enfoque */
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; /* Reducido un poco para un mejor equilibrio visual */
+    padding: 10px 20px; /* Añadido padding para más espacio alrededor de los botones */
+    gap: 20px; /* Espacio entre botones */
+    background-color: #f8f9fa; /* Fondo claro para contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+}
+
+.boton-enviar {
+    width: 100px; /* Tamaño más grande para mayor usabilidad */
+    height: 40px; /* Altura aumentada */
+    background-color: #0095ff; /* Color de fondo azul */
+    color: #fff; /* Texto blanco para buen contraste */
+    border: none; /* Eliminación de bordes predeterminados */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Indicador de clic */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+}
+
+.boton-enviar:hover {
+    background-color: #007acc; /* Color de fondo más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligero aumento de tamaño */
+}
+
+
+.boton-limpiar {
+    width: 100px; /* Tamaño más grande para mayor usabilidad */
+    height: 40px; /* Altura aumentada */
+    border: 2px solid #7ec0ee; /* Borde sólido con color azul claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 0; /* Espacio interno del botón */
+    font-weight: bold; /* Texto en negrita */
+    color: #7ec0ee; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    cursor: pointer; /* Indicador de clic */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.boton-limpiar:hover {
+    background-color: #d9ebff; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Ligero aumento de tamaño */
+}
+
+.boton-borrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #00ccff;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-borrar:hover {
+    background-color: #ff1919;
+    transform: scale(1.1);
+}
+
+.boton-borrar i {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #249ed69f; /* Color de fondo más suave */
+    font-size: 14px; /* Aumento del tamaño de fuente para una mejor legibilidad */
+    font-weight: normal; /* Eliminar negrita para un aspecto más equilibrado */
+    border: none; /* Eliminar borde para un aspecto más limpio */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+
+/*Mobile*/
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2px;
+    }
+
+}
