@@ -19,6 +19,7 @@ Alura Geek es una aplicación web diseñada para mostrar una lista de productos 
 - CSS
 - JavaScript
 - JSON Server (para simular una API REST)
+- Node.JS
 
 ## Uso
 
